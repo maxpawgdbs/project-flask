@@ -16,8 +16,12 @@
 -API YandexID
 
 ## Запуск проекта
+
 ```
+git clone https://github.com/maxpawgdbs/project-flask
+cd project-flask
 pip install -r requirements.txt
 python project.py
 ```
+
 ### В проекте присутствует тестовая БД
