@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Песни орлёнка</title>
+    <link rel="stylesheet" type="text/css" href="static/css-styles/main-page.css">
+</head>
+<body>
+<header>
+    <a href="https://oauth.yandex.ru/authorize?response_type=token&client_id=2c9c66d97ba749a884d73ce5db5aec3b">
+        <h1>Загрузить свою песню</h1>
+    </a>
+</header>
+<h1 class="main-label">Песни орлёнка</h1>
+<div>
+    {% for item in out %}
+    <a href='/{{ item[0] }}'><h2 class='element'>{{ item[1] }}</h2></a>
+    {% endfor %}
+</div>
+</body>

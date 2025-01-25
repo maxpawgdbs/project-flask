@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Песни орлёнка - ''' + name + '''</title>
+    <link rel="stylesheet" type="text/css" href="static/css-styles/song-page.css">
+</head>
+<body>
+<h2 class="main-page"><a href="/">К списку песен</a></h2>
+<h1 class="title-label">{{ name }}</h1>
+<audio controls src="{{ filename }}"></audio>
+<p class="text-label">{{ text|safe }}</p>
+</body>
+</html>

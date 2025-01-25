@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Загрузить свою песню</title>
+</head>
+<body>
+<form method="POST" enctype="multipart/form-data">
+    <p><b>Загрузите файл с песней</b></p>
+    <input type="file" name="sound-file" accept="audio/*">
+    <textarea name="title">Введите название песни</textarea>
+    <textarea name="text">Введите текст песни</textarea>
+    <button type="submit">Отправить</button>
+</form>
+<script>
+    // Заменяем символ "#" на "?"
+    if (window.location.href.indexOf("#") > -1) {
+        var newUrl = window.location.href.replace("#", "?");
+        window.history.replaceState({}, document.title, newUrl);
+    }
+</script>
+</body>
+</html>
