@@ -9,11 +9,11 @@
 
 ## Используемые технологии
 
--Python
--Flask
--json
--HTML, CSS, JavaScript
--API YandexID
+- Python
+- Flask
+- json
+- HTML, CSS, JavaScript
+- API YandexID
 
 ## Запуск проекта
 
